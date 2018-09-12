@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view>支付金额</view>
+      <view class="price">{{total}}</view>
+      
+      <view class="selected-seats">
+	      <view class="info" wx:if="{{ !flag }}">
+           <button type="primary" bindtap="navigateBack">支付</button>
+        </view>
+	      <view class="info" wx:if="{{ flag }}">
+           <button type="primary" bindtap="redirectTo">支付</button>
+        </view>
+	    </view>
+
+    </view>
+  </view>
+</view>

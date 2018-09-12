@@ -1,0 +1,36 @@
+.list {
+  height: 100%;
+}
+
+.list .item {
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+  cursor: pointer;
+}
+
+.list .item .poster {
+  width: 128rpx;
+  height: 168rpx;
+  margin-right: 20rpx;
+}
+
+.list .item .meta {
+  flex: 1;
+}
+
+.list .item .meta .title,
+.list .item .meta .sub-title {
+  display: block;
+  margin-bottom: 15rpx;
+}
+
+.list .item .meta .title {
+  font-size: 32rpx;
+}
+
+.list .item .meta .artists {
+  font-size: 24rpx;
+  color: #999;
+}
+

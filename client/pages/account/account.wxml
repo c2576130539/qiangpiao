@@ -1,0 +1,13 @@
+<view>
+  <view class="userinfo" bindtap='login'>
+    <image src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}" background-size="cover" class="userinfo-avatar"></image>
+    <text class="userinfo-nickname">{{logged ?userInfo.nickName:'使用微信登录'}}</text>
+  </view>
+  
+  <view class="collections">
+    <view class="collection" bindtap="showpiao">
+      <image src='../../images/piao.png'></image>
+      <text>我的影票</text>
+    </view>
+  </view>
+</view>

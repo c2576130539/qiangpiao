@@ -1,0 +1,39 @@
+<import src="../../components/seats/seats.wxml"/>
+
+<view class="seats-ticket">
+    <view class="movie-info">
+        <view class="movie">
+            <view class="title">
+                <text class="sub hide">{{ movie.title }}(评分：{{ movie.rating }})</text>
+            </view>
+            <view class="time">9月9日(周日) 16:55</view>
+        </view>
+    </view>
+</view>
+
+<view class="seats-img">
+    <text class="seats-icon seats-available"></text>
+    <text class="text">可选</text>
+    <text class="seats-icon selected"></text>
+    <text class="text">已选</text>
+    <text class="seats-icon unavailable"></text>
+    <text class="text">已售</text>
+    <text class="seats-icon double"></text>
+    <text class="text">情侣座</text>
+    <view class="front">5号厅银幕</view>
+</view>
+
+<view class="seats-area">
+    <template is="seats" data="{{ ...$wux.seats.movie }}"/>
+</view>
+
+<view class="selected-seats">
+	<view class="info" wx:if="{{ !items.length }}">一次最多选5个座位</view>
+	<view class="seat-wrap" wx:if="{{ !!items.length }}">
+		<view class="seat" data-id="{{ item.id }}" wx:for="{{ items }}" wx:key="">{{ item.label }}</view>
+	</view>
+	
+  <navigator url="../pay/pay?total={{ total }}&items={{ ceshi }}">
+    <button type="primary">￥{{ total }}确认购买</button>
+  </navigator>
+</view>

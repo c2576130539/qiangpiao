@@ -1,0 +1,35 @@
+<view class="container">
+  <image wx:if="{{ movie.imageslarge }}" class="background" src="{{ movie.imageslarge }}" mode="aspectFill"/>
+  <block wx:if="{{ movie.title }}">
+    <view class="item">
+      <image class="poster" src="{{ movie.imagessmall }}"/>
+      <view class="meta">
+        <text class="title">{{ movie.title }}</text>
+        <text class="sub-title">{{ movie.original_title }} </text>
+        <view class="artists">导演：{{ movie.directors }} </view>
+        <view class="artists">主演：{{ movie.casts }}</view>
+      </view>
+    </view>
+
+    <view class="item">
+      <view class="meta">
+        <text class="title">地点：{{ place }}</text>
+        <text class="title">时间：{{ time }}</text>
+        <text class="title">座位：{{ wz }}</text>
+      </view>
+    </view>
+    
+     <view class="item">
+      <view class="meta">
+        <text class="title">     用下方二维码取票:</text>
+        <canvas style="width: 200px; height: 200px; margin: 10px auto;" canvas-id="qrcode"></canvas>
+        <text class="piao">取票号:{{ num }}</text>
+      </view>
+    </view>
+
+  </block>
+
+
+</view>
+
+  

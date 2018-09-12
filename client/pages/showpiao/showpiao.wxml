@@ -1,0 +1,16 @@
+<!-- 电影列表组件 供每一个列表展示的页面使用 -->
+  <view class="list">
+    <block wx:for-items="{{piaolist}}" wx:key="{{item.num}}">
+     <navigator url="../showdetail/showdetail?num={{item.num}}" class="navigator">
+      <view class="item">
+      <image class="poster" src="{{ item.zp }}"/>
+      <view class="meta">
+        <text class="title">{{ item.title }}</text>
+        <view class="artists">影院：{{ item.place }} </view>
+        <view class="artists">时间：{{ item.time }} </view>
+        <view class="artists">座位：{{ item.seat }} </view>
+      </view>
+    </view>
+    </navigator>
+    </block>
+  </view>

@@ -1,0 +1,42 @@
+/* pages/account/account.wxss */
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.collections {
+  border-top: 1px solid #dedede;
+}
+
+.collection {
+  height: 48px;
+  border-bottom: 1px solid #dedede;
+}
+
+.collection image {
+  width: 24px;
+  height: 24px;
+  padding: 12px 22px 12px 30px;
+  float: left;
+  
+}
+
+.collection text {
+  color: #aaa;
+  line-height: 48px;
+  float: left;
+}

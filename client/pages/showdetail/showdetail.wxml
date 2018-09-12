@@ -1,0 +1,25 @@
+<view class="list">
+      <view class="item">
+       <image class="poster" src="{{ piao.zp }}"/>
+       <view class="meta">
+        <text class="title">{{ piao.title }}</text>
+        <view class="artists">影院：{{ piao.place }} </view>
+        <view class="artists">时间：{{ piao.time }} </view>
+        <view class="artists">座位：{{ piao.seat }} </view>
+       </view>
+     </view>
+</view>
+
+<view class="list">
+      <view class="item">
+       <view class="meta">
+        <text class="title">取票号:{{ num }}</text>
+        <canvas style="width: 200px; height: 200px; margin: 10px auto;" canvas-id="qrcode"></canvas>
+       </view>
+     </view>
+</view>
+
+<view class="list">
+  <button type="primary" bindtap="navigateBack">退票</button>
+</view>
+

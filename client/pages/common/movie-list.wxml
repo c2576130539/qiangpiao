@@ -1,0 +1,26 @@
+<!-- 电影列表组件 供每一个列表展示的页面使用 -->
+<template name="movie-list">
+  <view class="list">
+    <block wx:for-items="{{movies}}" wx:key="{{item.num}}">
+     <navigator url="../seats/seats?id={{ item.id }}" class="navigator">
+      <view class="item">
+      <image class="poster" src="{{ item.imagessmall }}"/>
+      <view class="meta">
+        <text class="title">{{ item.title }}</text>
+        <text class="sub-title">{{ item.original_title }} </text>
+        <text class="artists">导演：{{ item.directors }} </text>
+      </view>
+      <view class="rating">
+        <text>购买</text>
+      </view>
+    </view>
+    </navigator>
+    </block>
+     <view class="tips">
+      <view >
+        <text>没有更多内容了</text>
+      </view>
+    </view>
+
+  </view>
+</template>

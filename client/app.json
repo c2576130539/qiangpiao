@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/splash/splash",
+    "pages/home/home",
+    "pages/account/account",
+    "pages/showpiao/showpiao",
+    "pages/showdetail/showdetail",
+    "pages/seats/seats",
+    "pages/pay/pay",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#40586d",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "电影",
+    "backgroundColor": "#f8f9fb",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#268dcd",
+    "borderStyle": "white",
+    "backgroundColor": "#fafafa",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/ing.png",
+        "selectedIconPath": "images/ing-active.png",
+        "text": "正在热映"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
