@@ -1,4 +1,2 @@
-# qiangpiao
-仿猫眼电影，电影选座买票微信小程序
-
-微信小程序微票
+# 微信小程序微票
+基于 Wafer2 快速开发 Demo  详细：https://github.com/tencentyun/wafer2-quickstart-nodejs
